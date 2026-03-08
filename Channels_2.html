@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Model Trains</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #333;
+    }
+
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .video-card {
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding-bottom: 15px;
+    }
+
+    /* UPDATED: no aspect-ratio hack, let content define height */
+    .video-frame {
+      width: 100%;
+      overflow: hidden;
+    }
+
+    /* NEW: make image responsive */
+    .video-frame img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .video-link {
+      text-align: center;
+      margin-top: 12px;
+    }
+
+    .video-link a {
+      color: #1a0dab;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .video-link a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>YouTube Channels</h1>
+
+  <div class="video-grid">
+
+    <div class="video-card">
+      <div class="video-frame">
+        <img src="https://evilchemist.github.io/YouTube-Faves/BLMA.png" alt="BLMA Models">
+      </div>
+      <div class="video-link">
+        <a href="https://www.youtube.com/@BLMAmodels" target="_blank">BLMA Models</a>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
