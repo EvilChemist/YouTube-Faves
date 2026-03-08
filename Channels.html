@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Model Trains</title>
+  <title>YouTube Channels</title>
 
   <style>
     body {
@@ -34,19 +34,17 @@
       padding-bottom: 15px;
     }
 
+    /* Responsive image container */
     .video-frame {
-      position: relative;
-      padding-bottom: 56.25%;
-      height: 0;
+      width: 100%;
+      overflow: hidden;
     }
 
-    .video-frame iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
+    /* Responsive image */
+    .video-frame img {
       width: 100%;
-      height: 100%;
-      border: none;
+      height: auto;
+      display: block;
     }
 
     .video-link {
@@ -73,21 +71,19 @@
 
   <div class="video-grid">
 
-    <!-- Auto‑generated from your list -->
-
-    <div class="video-card"><div class="video-frame"><iframe src="https://evilchemist.github.io/YouTube-Faves/BLMA.png" allowfullscreen></iframe></div><div class="video-link"><a href="https://www.youtube.com/@BLMAmodels" target="_blank">BLMA Models</a></div></div>
-
+    <!-- BLMA Models -->
     <div class="video-card">
-  <div class="video-frame">
-    <img src="https://evilchemist.github.io/YouTube-Faves/BLMA.png" alt="BLMA Models" />
-  </div>
-  <div class="video-link">
-    <a href="https://www.youtube.com/@BLMAmodels" target="_blank">BLMA Models</a>
-  </div>
-</div>
+      <a href="https://www.youtube.com/@BLMAmodels" target="_blank">
+        <div class="video-frame">
+          <img src="https://evilchemist.github.io/YouTube-Faves/BLMA.png" alt="BLMA Models">
+        </div>
+      </a>
 
+      <div class="video-link">
+        <a href="https://www.youtube.com/@BLMAmodels" target="_blank">BLMA Models</a>
+      </div>
+    </div>
 
-   
   </div>
 
 </body>
