@@ -18,24 +18,22 @@
       color: #333;
     }
 
-    /* 1.5× larger grid */
+    /* Enlarged grid (no transform) */
     .video-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 45px;
-      max-width: 2100px;
+      gap: 45px; /* bigger spacing */
+      max-width: 2100px; /* wider grid */
       margin: 0 auto;
     }
 
-    /* 1.5× larger cards */
+    /* Enlarged cards (no transform) */
     .video-card {
       background: #fff;
       border-radius: 15px;
       overflow: hidden;
       box-shadow: 0 6px 15px rgba(0,0,0,0.15);
       padding-bottom: 22px;
-      transform: scale(1.5);
-      transform-origin: top left;
     }
 
     .video-frame {
@@ -43,6 +41,7 @@
       overflow: hidden;
     }
 
+    /* Larger images */
     .video-frame img {
       width: 100%;
       height: auto;
@@ -51,13 +50,13 @@
 
     .video-link {
       text-align: center;
-      margin-top: 12px;
+      margin-top: 18px; /* slightly larger spacing */
     }
 
     .video-link a {
       color: #1a0dab;
       text-decoration: none;
-      font-size: 16px;
+      font-size: 20px; /* larger text */
       font-weight: bold;
     }
 
