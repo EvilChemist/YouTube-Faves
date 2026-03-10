@@ -1,50 +1,86 @@
-h1 {
-  text-align: center;
-  margin-bottom: 2.5rem;
-  color: #333;
-  font-size: 2rem; /* ~32px */
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>YouTube Channels</title>
 
-/* Grid spacing in rem */
-.video-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2.8rem; /* 45px → 2.8rem */
-  max-width: 131rem; /* 2100px → 131rem */
-  margin: 0 auto;
-}
+  <style>
+    :root {
+      font-size: 16px; /* 1rem baseline */
+    }
 
-/* Card styling */
-.video-card {
-  background: #fff;
-  border-radius: 0.9rem;
-  overflow: hidden;
-  box-shadow: 0 0.4rem 0.9rem rgba(0,0,0,0.15);
-  padding-bottom: 1.4rem;
-}
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 1.25rem;
+    }
 
-/* Circle size (if images should be circles) */
-.video-frame img {
-  width: 4rem;      /* big enough for 3rem text */
-  height: 4rem;
-  border-radius: 50%;
-  object-fit: cover;
-  display: block;
-}
+    h1 {
+      text-align: center;
+      margin-bottom: 2.5rem;
+      color: #333;
+      font-size: 2rem; /* ~32px */
+    }
 
-/* Channel name text */
-.video-link {
-  text-align: center;
-  margin-top: 1.1rem;
-}
+    /* Grid layout */
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2.8rem; /* 45px */
+      max-width: 131rem; /* 2100px */
+      margin: 0 auto;
+    }
 
-.video-link a {
-  color: #1a0dab;
-  text-decoration: none;
-  font-size: 1.25rem; /* 20px → 1.25rem */
-  font-weight: bold;
-}
+    /* Card styling */
+    .video-card {
+      background: #fff;
+      border-radius: 0.9rem;
+      overflow: hidden;
+      box-shadow: 0 0.4rem 0.9rem rgba(0,0,0,0.15);
+      padding-bottom: 1.4rem;
+      text-align: center;
+    }
 
-.video-link a:hover {
-  text-decoration: underline;
-}
+    /* Circle images sized for 3rem text */
+    .video-frame img {
+      width: 4rem;      /* fits 3rem text comfortably */
+      height: 4rem;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .video-link {
+      margin-top: 1.1rem;
+    }
+
+    .video-link a {
+      color: #1a0dab;
+      text-decoration: none;
+      font-size: 1.25rem; /* 20px */
+      font-weight: bold;
+    }
+
+    .video-link a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>YouTube Channels</h1>
+
+  <div class="video-grid">
+
+    <!-- BLMA Models -->
+    <div class="video-card">
+      <a href="https://www.youtube.com/@BLMAmodels" target="_blank">
+        <div class="video-frame">
+          <img src="BLMAmodels.png" alt="BLMA Models">
+        </div>
+      </a>
+      <div class="video-link">
+        <a href="https://www.youtube.com/@BLMAmodels" target="_blank">BLMA Models</a>
