@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Pastel Circle Index</title>
+
+<style>
+    body {
+        background: #fafafa;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 40px 0;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+        color: #444;
+        margin-bottom: 40px;
+    }
+
+    .circle-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .circle {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 15px;
+        font-size: 1rem;
+        font-weight: bold;
+        color: #333;
+        text-decoration: none;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        transition: transform 0.2s ease;
+    }
+
+    .circle:hover {
+        transform: scale(1.08);
+    }
+
+    /* Pastel colors */
+    .p1 { background: #ffdce5; }
+    .p2 { background: #ffeccc; }
+    .p3 { background: #e8f7d3; }
+    .p4 { background: #d9ecff; }
+    .p5 { background: #f2e4ff; }
+    .p6 { background: #ffe4f2; }
+    .p7 { background: #e4faff; }
+</style>
+</head>
+
+<body>
+
+<h1>Choose a Category</h1>
+
+<div class="circle-grid">
+
+    <a class="circle p1" href="#">ABC Mouse</a>
+    <a class="circle p2" href="#">Letters</a>
+    <a class="circle p3" href="#">Storybots</a>
+    <a class="circle p4" href="#">Storybots Letters</a>
+    <a class="circle p5" href="#">Super Simple Songs</a>
+    <a class="circle p6" href="#">The Pigeon and Peppa Pig</a>
+    <a class="circle p7" href="#">YouTube Channels</a>
+
+</div>
+
+</body>
+</html>
