@@ -2,136 +2,122 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Festive Train Links</title>
+<title>Train Links</title>
+
 <style>
     body {
-        background: linear-gradient(#e0f6ff, #ffffff);
-        font-family: "Trebuchet MS", sans-serif;
-        text-align: center;
+        background: #eef3f7;
+        font-family: Arial, sans-serif;
+        overflow-x: hidden;
         padding: 40px 0;
+        text-align: center;
     }
 
     h1 {
-        color: #b30000;
-        font-size: 3rem;
-        text-shadow: 2px 2px #fff;
+        font-size: 2.5rem;
+        color: #333;
         margin-bottom: 40px;
     }
 
-    .train-track {
+    /* TRAIN ANIMATION */
+    @keyframes moveTrain {
+        0% { transform: translateX(-120%); }
+        100% { transform: translateX(120%); }
+    }
+
+    .train-wrapper {
         width: 100%;
-        border-top: 6px solid #654321;
-        margin-top: 60px;
+        overflow: hidden;
+        margin-top: 40px;
     }
 
     .train {
         display: flex;
-        justify-content: center;
-        gap: 20px;
-        flex-wrap: wrap;
-        margin-bottom: 40px;
+        gap: 30px;
+        animation: moveTrain 18s linear infinite;
+        align-items: flex-end;
     }
 
+    /* TRAIN CARS */
     .car {
-        background: #ffefef;
-        border: 4px solid #b30000;
-        border-radius: 12px;
-        width: 200px;
+        background: #ffffff;
+        border: 3px solid #444;
+        border-radius: 10px;
+        width: 180px;
         padding: 20px;
-        box-shadow: 0 4px 6px rgba(0,0,0,0.2);
         position: relative;
-    }
-
-    .car:before, .car:after {
-        content: "";
-        position: absolute;
-        bottom: -20px;
-        width: 40px;
-        height: 40px;
-        background: #333;
-        border-radius: 50%;
-    }
-
-    .car:before {
-        left: 20px;
-    }
-
-    .car:after {
-        right: 20px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.15);
     }
 
     .car a {
         text-decoration: none;
-        color: #b30000;
+        color: #222;
         font-weight: bold;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
+    /* WHEELS */
+    .car:before, .car:after {
+        content: "";
+        position: absolute;
+        bottom: -22px;
+        width: 35px;
+        height: 35px;
+        background: #333;
+        border-radius: 50%;
+    }
+
+    .car:before { left: 20px; }
+    .car:after { right: 20px; }
+
+    /* ENGINE */
     .engine {
-        background: #ffe8cc;
-        border-color: #cc6600;
+        background: #d9e8ff;
+        border-color: #2a4d8f;
     }
 
-    .engine:before, .engine:after {
-        background: #444;
+    .engine-stack {
+        width: 40px;
+        height: 40px;
+        background: #2a4d8f;
+        border-radius: 5px;
+        margin: 0 auto 10px auto;
     }
 
-    .smoke {
-        font-size: 2rem;
-        margin-bottom: 10px;
-        animation: puff 2s infinite ease-in-out;
-    }
-
-    @keyframes puff {
-        0% { opacity: 0.2; transform: translateY(0); }
-        50% { opacity: 1; transform: translateY(-10px); }
-        100% { opacity: 0.2; transform: translateY(0); }
+    /* TRACK */
+    .track {
+        width: 100%;
+        height: 6px;
+        background: #555;
+        margin-top: 60px;
     }
 </style>
 </head>
 
 <body>
 
-<h1>🎄 All Aboard the Holiday Express! 🚂</h1>
+<h1>All Aboard!</h1>
 
-<div class="train">
+<div class="train-wrapper">
+    <div class="train">
 
-    <div class="car engine">
-        <div class="smoke">💨</div>
-        <a href="https://evilchemist.github.io/YouTube-Faves">Engine Room</a>
+        <div class="car engine">
+            <div class="engine-stack"></div>
+            <a href="https://evilchemist.github.io/YouTube-Faves">Engine</a>
+        </div>
+
+        <div class="car"><a href="#">ABC Mouse</a></div>
+        <div class="car"><a href="#">Letters</a></div>
+        <div class="car"><a href="#">Storybots</a></div>
+        <div class="car"><a href="#">Storybots Letters</a></div>
+        <div class="car"><a href="#">Super Simple Songs</a></div>
+        <div class="car"><a href="#">The Pigeon and Peppa Pig</a></div>
+        <div class="car"><a href="#">YouTube Channels</a></div>
+
     </div>
-
-    <div class="car">
-        <a href="#">ABC Mouse</a>
-    </div>
-
-    <div class="car">
-        <a href="#">Letters</a>
-    </div>
-
-    <div class="car">
-        <a href="#">Storybots</a>
-    </div>
-
-    <div class="car">
-        <a href="#">Storybots Letters</a>
-    </div>
-
-    <div class="car">
-        <a href="#">Super Simple Songs</a>
-    </div>
-
-    <div class="car">
-        <a href="#">The Pigeon & Peppa Pig</a>
-    </div>
-
-    <div class="car">
-        <a href="#">YouTube Channels</a>
-    </div>
-
 </div>
 
-<div class="train-track"></div>
+<div class="track"></div>
 
 </body>
 </html>
