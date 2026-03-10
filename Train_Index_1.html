@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Festive Train Links</title>
+<style>
+    body {
+        background: linear-gradient(#e0f6ff, #ffffff);
+        font-family: "Trebuchet MS", sans-serif;
+        text-align: center;
+        padding: 40px 0;
+    }
+
+    h1 {
+        color: #b30000;
+        font-size: 3rem;
+        text-shadow: 2px 2px #fff;
+        margin-bottom: 40px;
+    }
+
+    .train-track {
+        width: 100%;
+        border-top: 6px solid #654321;
+        margin-top: 60px;
+    }
+
+    .train {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+    }
+
+    .car {
+        background: #ffefef;
+        border: 4px solid #b30000;
+        border-radius: 12px;
+        width: 200px;
+        padding: 20px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+        position: relative;
+    }
+
+    .car:before, .car:after {
+        content: "";
+        position: absolute;
+        bottom: -20px;
+        width: 40px;
+        height: 40px;
+        background: #333;
+        border-radius: 50%;
+    }
+
+    .car:before {
+        left: 20px;
+    }
+
+    .car:after {
+        right: 20px;
+    }
+
+    .car a {
+        text-decoration: none;
+        color: #b30000;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+
+    .engine {
+        background: #ffe8cc;
+        border-color: #cc6600;
+    }
+
+    .engine:before, .engine:after {
+        background: #444;
+    }
+
+    .smoke {
+        font-size: 2rem;
+        margin-bottom: 10px;
+        animation: puff 2s infinite ease-in-out;
+    }
+
+    @keyframes puff {
+        0% { opacity: 0.2; transform: translateY(0); }
+        50% { opacity: 1; transform: translateY(-10px); }
+        100% { opacity: 0.2; transform: translateY(0); }
+    }
+</style>
+</head>
+
+<body>
+
+<h1>🎄 All Aboard the Holiday Express! 🚂</h1>
+
+<div class="train">
+
+    <div class="car engine">
+        <div class="smoke">💨</div>
+        <a href="https://evilchemist.github.io/YouTube-Faves">Engine Room</a>
+    </div>
+
+    <div class="car">
+        <a href="#">ABC Mouse</a>
+    </div>
+
+    <div class="car">
+        <a href="#">Letters</a>
+    </div>
+
+    <div class="car">
+        <a href="#">Storybots</a>
+    </div>
+
+    <div class="car">
+        <a href="#">Storybots Letters</a>
+    </div>
+
+    <div class="car">
+        <a href="#">Super Simple Songs</a>
+    </div>
+
+    <div class="car">
+        <a href="#">The Pigeon & Peppa Pig</a>
+    </div>
+
+    <div class="car">
+        <a href="#">YouTube Channels</a>
+    </div>
+
+</div>
+
+<div class="train-track"></div>
+
+</body>
+</html>
