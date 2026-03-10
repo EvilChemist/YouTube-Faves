@@ -1,80 +1,50 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>Pastel Circle Index</title>
+h1 {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  color: #333;
+  font-size: 2rem; /* ~32px */
+}
 
-<style>
-    body {
-        background: #fafafa;
-        font-family:  "Trebuchet MS", Helvetica, sans-serif;
-        text-align: center;
-        padding: 40px 0;
-    }
+/* Grid spacing in rem */
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.8rem; /* 45px → 2.8rem */
+  max-width: 131rem; /* 2100px → 131rem */
+  margin: 0 auto;
+}
 
-    h1 {
-        font-size: 5rem;
-        color: #444;
-        margin-bottom: 40px;
-    }
+/* Card styling */
+.video-card {
+  background: #fff;
+  border-radius: 0.9rem;
+  overflow: hidden;
+  box-shadow: 0 0.4rem 0.9rem rgba(0,0,0,0.15);
+  padding-bottom: 1.4rem;
+}
 
-    .circle-grid {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 30px;
-        max-width: 900px;
-        margin: 0 auto;
-    }
+/* Circle size (if images should be circles) */
+.video-frame img {
+  width: 4rem;      /* big enough for 3rem text */
+  height: 4rem;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
 
-    .circle {
-        width: 160px;
-        height: 160px;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        padding: 20px;
-        font-size: 3rem;   /* Bigger text */
-        font-weight: bold;
-        color: #333;
-        text-decoration: none;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        transition: transform 0.2s ease;
-        line-height: 1.3;
-    }
+/* Channel name text */
+.video-link {
+  text-align: center;
+  margin-top: 1.1rem;
+}
 
-    .circle:hover {
-        transform: scale(1.08);
-    }
+.video-link a {
+  color: #1a0dab;
+  text-decoration: none;
+  font-size: 1.25rem; /* 20px → 1.25rem */
+  font-weight: bold;
+}
 
-    /* Pastel colors */
-    .p1 { background: #ffdce5; }
-    .p2 { background: #ffeccc; }
-    .p3 { background: #e8f7d3; }
-    .p4 { background: #d9ecff; }
-    .p5 { background: #f2e4ff; }
-    .p6 { background: #ffe4f2; }
-    .p7 { background: #e4faff; }
-</style>
-</head>
-
-<body>
-
-<h1>Choose a Category</h1>
-
-<div class="circle-grid">
-
-    <a class="circle p1" href="#">ABC Mouse</a>
-    <a class="circle p2" href="#">Letters</a>
-    <a class="circle p3" href="#">Storybots</a>
-    <a class="circle p4" href="#">Storybots Letters</a>
-    <a class="circle p5" href="#">Super Simple Songs</a>
-    <a class="circle p6" href="#">The Pigeon and Peppa Pig</a>
-    <a class="circle p7" href="#">YouTube Channels</a>
-
-</div>
-
-</body>
-</html>
+.video-link a:hover {
+  text-decoration: underline;
+}
