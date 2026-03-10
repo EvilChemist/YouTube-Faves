@@ -6,7 +6,7 @@
 
 <style>
     body {
-        background: #eef3f7;
+        background: #e8f1f8;
         font-family: Arial, sans-serif;
         overflow-x: hidden;
         padding: 40px 0;
@@ -19,10 +19,10 @@
         margin-bottom: 40px;
     }
 
-    /* TRAIN ANIMATION */
+    /* TRAIN ANIMATION (reversed direction) */
     @keyframes moveTrain {
-        0% { transform: translateX(-120%); }
-        100% { transform: translateX(120%); }
+        0% { transform: translateX(120%); }
+        100% { transform: translateX(-120%); }
     }
 
     .train-wrapper {
@@ -33,20 +33,20 @@
 
     .train {
         display: flex;
-        gap: 30px;
-        animation: moveTrain 18s linear infinite;
+        gap: 40px;
+        animation: moveTrain 20s linear infinite;
         align-items: flex-end;
     }
 
-    /* TRAIN CARS */
+    /* CARTOON TRAIN CARS */
     .car {
-        background: #ffffff;
-        border: 3px solid #444;
-        border-radius: 10px;
-        width: 180px;
+        background: #fff;
+        border: 4px solid #333;
+        border-radius: 15px 15px 5px 5px; /* rounded roof */
+        width: 200px;
         padding: 20px;
         position: relative;
-        box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+        box-shadow: 0 4px 6px rgba(0,0,0,0.2);
     }
 
     .car a {
@@ -56,39 +56,40 @@
         font-size: 1.1rem;
     }
 
-    /* WHEELS */
+    /* WHEELS (cartoon style) */
     .car:before, .car:after {
         content: "";
         position: absolute;
-        bottom: -22px;
-        width: 35px;
-        height: 35px;
-        background: #333;
+        bottom: -28px;
+        width: 45px;
+        height: 45px;
+        background: #222;
+        border: 4px solid #555;
         border-radius: 50%;
     }
 
-    .car:before { left: 20px; }
-    .car:after { right: 20px; }
+    .car:before { left: 25px; }
+    .car:after { right: 25px; }
 
     /* ENGINE */
     .engine {
-        background: #d9e8ff;
-        border-color: #2a4d8f;
+        background: #cfe2ff;
+        border-color: #1f3f7a;
     }
 
     .engine-stack {
-        width: 40px;
-        height: 40px;
-        background: #2a4d8f;
-        border-radius: 5px;
+        width: 50px;
+        height: 60px;
+        background: #1f3f7a;
+        border-radius: 10px 10px 0 0;
         margin: 0 auto 10px auto;
     }
 
     /* TRACK */
     .track {
         width: 100%;
-        height: 6px;
-        background: #555;
+        height: 8px;
+        background: #444;
         margin-top: 60px;
     }
 </style>
@@ -121,3 +122,4 @@
 
 </body>
 </html>
+
